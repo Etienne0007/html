@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>&nbsp;</title>
+</head>
+<body>
+    <div>
+        <table width="100%" style="text-align: justify;">
+            <tr>
+                <td width="34%"  style="border: hidden;" valign="top">
+                    <p id="button1"><button style="background-color: gray;color: white;font-weight: bold;">RETROCONVERSION</button></p>
+                    <p id="result1" style="display: none;">La conversion rétrospective permet d'échanger et de partager les données bibliographiques entre les systèmes informatiques des bibliothèques. La dérivation permet de réutiliser une notice existante dans une autre base. Les notices non trouvées doivent être créées selon les normes de la transition bibliographique.</p>
+                </td>
+                <td  width="34%" style="border: hidden;" valign="top">
+                    <p id="button2"><button style="background-color: gray;color: white;font-weight: bold;">XML</button></p>
+                    <p id="result2" style="display: none;"> • EAD : est un standard basé sur le XML pour encoder des instruments de recherche archivistiques. Il sert à décrire et diffuser des fonds d'archives, des collections de manuscrits et d'autres documents ou objets organisés hiérarchiquement. Il est utilisé par les institutions culturelles et patrimoniales <br> • METS : est un standard de métadonnées XML pour décrire et préserver des documents numériques divers, utilisé par les institutions patrimoniales</p>
+                </td>
+
+                <td   style="border: hidden;" valign="top">
+                    <p id="button3"><button style="background-color: gray;color: white;font-weight: bold;">OCR</button></p>
+                    <p id="result3" style="display: none;">Une technologie qui permet de convertir des images de texte en données textuelles éditables. Elle est utile pour numériser et traiter des documents historiques, tels que des manuscrits, des livres anciens, des archives, etc...</p>
+                </td>
+            </tr>
+            <tr>
+                <td  style="border: hidden;" valign="top">
+                    <p id="button4"><button style="background-color: gray;color: white;font-weight: bold;">ISAD (G)</button></p>
+                    <p id="result4" style="display: none;">Méthode de description archivistique qui permet de présenter le contexte et la structure hiérarchique du fonds d'archives et de ses subdivisions</p>
+                </td>
+
+                <td   style="border: hidden;" valign="top">
+                    <p id="button5"><button style="background-color: gray;color: white;font-weight: bold;">IMAGES</button></p>
+                    <p id="result5" style="display: none;">Restaurer et améliorer la qualité des images numérisées de documents, d'objets ou de monuments historiques, en corrigeant les défauts, les dégradations ou les altérations dues au temps ou aux conditions de conservation (Retouche, détourage, recadrage, redressement, nettoyage, traitement courbure)</p>
+                </td>
+                <td style="border: hidden;" valign="top">
+                    <p id="button6"><button style="background-color: gray;color: white;font-weight: bold;">OUVRAGES NUMERISES</button></p>
+                    <p id="result6" style="display: none;">Restaurer et améliorer la qualité des documents numérisés (PDF).  <br>• Supprimer les traces de scan dans les marges qui peuvent nuire à la visibilité et à l'esthétique du document <br> •Supprimer au maximum les pétouilles dans la zone de texte et dans les marges qui sont des taches ou des points noirs causés par le scan sans dégrader le texte <br>        • Redresser et centrer le texte dans la page pour corriger les éventuels défauts d'alignement ou de rotation du scan. <br> • Nettoyer les éventuels visuels, qui sont des images ou des illustrations présentes dans le document pour enlever les impuretés ou les déformations <br>        • Rendre le texte flou en un peu plus lisible, pour améliorer la qualité du scan ou faciliter la lecture.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script>
+        function toggleText(buttonId, resultId) {
+            const button = document.getElementById(buttonId);
+            const result = document.getElementById(resultId);
+
+            button.addEventListener("click", function() {
+                if (result.style.display === "none") {
+                    result.style.display = "block";
+                } else {
+                    result.style.display = "none";
+                }
+            });
+        }
+
+        toggleText("button1", "result1");
+        toggleText("button2", "result2");
+        toggleText("button3", "result3");
+        toggleText("button4", "result4");
+        toggleText("button5", "result5");
+        toggleText("button6", "result6");
+    </script>
+</body>
+</html>
